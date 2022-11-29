@@ -1,0 +1,125 @@
+
+.graph {
+  position: fixed;
+  left: 0px;
+  top: 50px;
+}
+div.graph {
+  width: 100px;
+}
+.frame {
+  position: fixed;
+  left: 0px;
+  top: 50px;
+  isolation: isolate;
+  pointer-events: none;
+  overflow: none;
+  border: 3px solid white;
+  z-index: -9999999;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.axis {
+  font: 8px sans-serif;
+}
+
+.slider[data-v-3f2198f6] {
+  padding-top: 15px;
+  padding-bottom: 2px;
+}
+
+.color {
+  background-color: var(--4641bbbe);
+}
+.color .q-icon {
+  background-color: black !important;
+  border-radius: 100px;
+}
+.graphColored .q-toggle__thumb {
+  color: var(--f82295d2);
+  /* border: 1px solid v-bind('borderColor(saveState.currentEnv[type].getState(props.name).color)'); */
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px
+    var(--ee22f3ba);
+}
+.graphColored .q-toggle__track {
+  color: var(--4641e65e);
+  /* border: 1px solid v-bind('borderColor(saveState.currentEnv[type].getState(props.name).color)'); */
+  box-shadow: 1px 1px 1px 1px
+    var(--ee22f3ba);
+}
+.q-toggle__thumb {
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px teal;
+}
+.q-toggle__track {
+  box-shadow: 1px 1px 1px 1px teal;
+}
+
+.NewExpr {
+  border: 1px solid bisque;
+  border-radius: 4px;
+  gap: 3px;
+  padding: 2px;
+}
+button {
+  border-radius: 7px;
+}
+.textCentered {
+  text-align: center;
+}
+
+.cursor[data-v-2889afc4] {
+      z-index: 99999999;
+      background: none;
+      color: antiquewhite;
+      font-size: 5ch;
+      transform: rotate(-0.35turn);
+      position: fixed;
+      top: var(--6cb179be);
+      left: var(--0f512b80);
+      margin-top: -13px;
+      animation-name: none;
+}
+.animate[data-v-2889afc4] {
+      animation-name: moveCursor-2889afc4;
+      animation-duration: 1s;
+      animation-direction: forward;
+      animation-timing-function: ease-in-out;
+}
+@keyframes moveCursor-2889afc4 {
+0% {
+         top: var(--cc81d50e);
+         left: var(--f811f1b6);
+}
+100% {
+         top: var(--6cb179be);
+         left: var(--0f512b80);
+}
+}
+.shake[data-v-2889afc4] {
+      animation: shake-2889afc4 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+}
+@keyframes shake-2889afc4 {
+10%,
+      90% {
+         transform: translate3d(-1px, 0, 0);
+}
+20%,
+      80% {
+         transform: translate3d(2px, 0, 0);
+}
+30%,
+      50%,
+      70% {
+         transform: translate3d(-4px, 0, 0);
+}
+40%,
+      60% {
+         transform: translate3d(4px, 0, 0);
+}
+}
